@@ -1,6 +1,6 @@
 //SEMPRE LEIA A DOCUMENTAÇÃO, PRINCIPALMENTE DO NATIVE BASE
 
-import { Heading, NativeBaseProvider, StatusBar, VStack } from 'native-base';
+import {  NativeBaseProvider, StatusBar } from 'native-base';
 import { useFonts, Inter_400Regular, Inter_700Bold } from '@expo-google-fonts/inter'
 //importanndo temas
 import { Tema } from './src/styles/Tema';
@@ -8,6 +8,9 @@ import { Tema } from './src/styles/Tema';
 //importando componentes e telas
 import Carregando from './src/components/Carregando';
 import Logar from './src/screens/Logar';
+import  RotasApps  from './src/routes/RotasApps';
+
+
 
 
 export default function App() {
@@ -18,10 +21,9 @@ export default function App() {
       <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
 
       {fontes ? (
-        <Logar />
+        <RotasApps />
       )
        : (<Carregando />)}
-
 
       
     </NativeBaseProvider>

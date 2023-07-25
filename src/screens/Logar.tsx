@@ -9,17 +9,19 @@ import { Key, Envelope } from "phosphor-react-native";
 
 import logoH from "../assets/logoH.png";
 
+import { useNavigation } from "@react-navigation/native";
+
 
 export default function Logar() {
     const { colors } = useTheme();
     const [carregando, setCarregando] = useState(false);
 
+    const navigation = useNavigation();
 
     function clickBotaoLogar() {
-        setCarregando(true);
-        setTimeout(() => {
-            setCarregando(false);
-        }, 2000);
+       // setCarregando(true);
+        
+       navigation.navigate('Home');
     }
 
     return(
