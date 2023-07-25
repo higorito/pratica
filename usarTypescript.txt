@@ -1,0 +1,3 @@
+primeiro mudamos o app.js para app.tsx
+
+agora criamos um arquivo tsconfig.json
