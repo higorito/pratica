@@ -4,12 +4,15 @@ export const Tema = extendTheme({
     colors: {
         roxo: {
             200: '#afadd1',
-            300: '#424072',
+            300: '#fff',
             500: '#424072',
-            700: '#272643'
+            700: '#272643',
+            800: '#131221'
         },
         quaseBranco: {
-            700: '#e6e6e6'
+            800: '#242E42',
+            700: '#2F3B52',
+            400: '#e6e6e6'
         },
         azulClaro: {
             700: '#e3f6f5'
@@ -28,7 +31,13 @@ export const Tema = extendTheme({
             400: '#122c3b',
             500: '#0c1d27',
             600: '#060f14',
-        },   
+        }, 
+        amarelo: {
+            700: '#ffff00'
+        },
+        verde: {
+            700: '#2cf559'
+        },
     }, 
     fonts: {
         heading: 'Inter_700Bold',

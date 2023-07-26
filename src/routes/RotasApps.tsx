@@ -3,13 +3,19 @@ import { Home } from "../screens/Home";
 
 import Logar  from "../screens/Logar";
 
+import Registro from "../screens/Registro";
+import Detalhes from "../screens/Detalhes";
+
 import { NavigationContainer } from "@react-navigation/native";
+
 
 const Stack = createNativeStackNavigator();  //instancia o objeto Navigator e Screen
 
-type StackNavigation = {
+type StackNavigation = {  //estou criando tipo aqui e na pasta @types(msm coisa)
     Home: undefined;
     Logar: undefined;
+    Registro: undefined;
+    Detalhes: undefined;
 
 };
 
@@ -18,9 +24,11 @@ export type StackTypes = NativeStackNavigationProp<StackNavigation>;
 export default function RotasApps() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Home" component={Home} />
+            <Stack.Navigator screenOptions={{headerShown: false}}>
+                <Stack.Screen name="Home"  component={Home} />
                 <Stack.Screen name="Logar" component={Logar} />
+                <Stack.Screen name="Registro" component={Registro} />
+                <Stack.Screen name="Detalhes" component={Detalhes} />
             </Stack.Navigator>
         </NavigationContainer>
 

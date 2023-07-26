@@ -8,7 +8,7 @@ export default function Entrada({ ...rest }: IInputProps ) {   //...rest sao tod
             size="media"
             fontFamily="body"
             color="white"
-            placeholderTextColor="quaseBranco.700" 
+            placeholderTextColor="roxo.800" 
             _focus={{ borderWidth:2.5, borderColor:"azul.700", bg:"roxo.700" }}
 
             {...rest}  //passando todas as props para o input //dai aparece la na outra tela q chama o componente Entrada

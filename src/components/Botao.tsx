@@ -8,8 +8,8 @@ type PropsTipos = IButtonProps & { //criando uma propriedade titulo
 export default function Botao({titulo, ...rest}: PropsTipos) {
 
     return(
-        <ButtonNativeBase bg="azulVar.100" h={14} fontSize="pequena" 
-                rounded="8" _pressed={{bg: 'azulVar.400'}} 
+        <ButtonNativeBase bg="roxo.700" h={14} fontSize="pequena" 
+                rounded="8" _pressed={{bg: 'roxo.800'}} 
                 {...rest}
                 >
 
