@@ -1,6 +1,6 @@
 import { HStack, Heading, IconButton, StyledProps, useTheme } from "native-base";
 import { useNavigation } from "@react-navigation/native";
-import { ArrowFatLeft } from "phosphor-react-native";
+import { ArrowFatLeft, CaretCircleLeft } from "phosphor-react-native";
 
 type CabecalhoProps = StyledProps & {
     titulo: string;
@@ -19,7 +19,7 @@ export default function Cabecalho({ titulo, ...rest }: CabecalhoProps  ) {
             bg="quaseBranco.700" pt={12} pb={4} px={1} {...rest} 
             >
             
-            <IconButton icon={<ArrowFatLeft size={32} color="white" />}   onPress={voltar} />
+            <IconButton icon={<CaretCircleLeft size={32} color="white" />}   onPress={voltar} />
             
             <Heading color="white" fontSize="gigante" flex={1} ml={6}  >{titulo}</Heading>
         </HStack>

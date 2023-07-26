@@ -2,17 +2,20 @@ import { Icon, VStack, HStack, Text, useTheme } from "native-base";
 import { IconProps } from "phosphor-react-native";
 import { ElementType } from "react";
 
+
 type Props = {
     titulo: string;
     descricao: string;
     icon: ElementType<IconProps>;
+    color?: string;
 }
 
-export default function DetalhesLivros(  {titulo, descricao, icon:Icon } :Props   ) {
+
+export default function DetalhesLivros(  {titulo, descricao, color="quaseBranco.700", icon:Icon } :Props   ) {
     const {colors} = useTheme();
     
     return(
-        <VStack flex={1} bg="quaseBranco.700" mx={4} mt={4} mb={1} rounded={16}>
+        <VStack  bg={color} mx={8} mt={4} mb={1} rounded={16}>
             <HStack 
                 bg="quaseBranco.800" alignItems="center" mb={4} 
             >
@@ -27,6 +30,8 @@ export default function DetalhesLivros(  {titulo, descricao, icon:Icon } :Props 
                     {descricao}
                 </Text>   
             )}
+
+           
         
         </VStack>
     );
