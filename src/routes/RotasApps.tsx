@@ -15,7 +15,7 @@ type StackNavigation = {  //estou criando tipo aqui e na pasta @types(msm coisa)
     Home: undefined;
     Logar: undefined;
     Registro: undefined;
-    Detalhes: undefined;
+    Detalhes: {id: string};
 
 };
 

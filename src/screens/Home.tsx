@@ -51,6 +51,10 @@ export function Home() {
         navigation.navigate("Registro");
     }
 
+    function AbrirDetalhes(id: string) {
+        navigation.navigate("Detalhes", { id });
+    }
+
     return(
         <VStack flex={1} bg="quaseBranco.700" pt={12} pl={5} pb={3} pr={5}>
 
@@ -93,7 +97,7 @@ export function Home() {
                     data={livros}
                     keyExtractor={item => item.id}
                     renderItem={ 
-                        ( {item} ) => <Livro dados={item}  /> 
+                        ( {item} ) => <Livro dados={item}   onPress={() => AbrirDetalhes(item.id)}/> 
                     }
                     contentContainerStyle={{ paddingBottom: 80  }}
                     ListEmptyComponent={ ()=> (

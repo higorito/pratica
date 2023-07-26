@@ -4,7 +4,7 @@ export declare global {
             Home: undefined;
             Logar: undefined;
             Registro: undefined;
-            Detalhes: undefined;
+            Detalhes: {id: string};
         }
 
     }
